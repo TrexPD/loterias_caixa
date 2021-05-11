@@ -14,7 +14,8 @@ print(concurso.listaDezenas())
 
 ```
 # -*- coding: utf-8 -*-
-from loterias import MegaSena
+from loterias import (MegaSena, LotoFacil, Quina, LotoMania, TimeMania,
+                      DuplaSena, Federal, Loteca, DiadeSorte, SuperSet)
 
 concurso = Sorteio(2224)
 
