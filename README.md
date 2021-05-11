@@ -6,7 +6,7 @@
 # -*- coding: utf-8 -*-
 from loterias import *
 
-concurso = loterias()
+concurso = MegaSena()
 
 print(concurso.listaDezenas())
 ````
@@ -17,7 +17,7 @@ print(concurso.listaDezenas())
 from loterias import (MegaSena, LotoFacil, Quina, LotoMania, TimeMania,
                       DuplaSena, Federal, Loteca, DiadeSorte, SuperSet)
 
-concurso = Sorteio(2224)
+concurso = LotoFacil(2224)
 
 print(concurso.listaDezenas())
 ````
@@ -28,7 +28,7 @@ print(concurso.listaDezenas())
 # -*- coding: utf-8 -*-
 from loterias import MegaSena
 
-concurso = Sorteio()
+concurso = MegaSena()
 
 print(concurso.todosDados())
 print(concurso.tipoJogo())
