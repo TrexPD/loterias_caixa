@@ -1,10 +1,10 @@
-# Dados de sorteios - Loterias Caixa
+# Dados de sorteios - Loteria Caixa
 
 ## Codigo para receber dados do sorteio atual
 
 ```
 # -*- coding: utf-8 -*-
-from loterias import *
+from loteria_caixa import *
 
 concurso = MegaSena()
 
@@ -14,7 +14,7 @@ print(concurso.listaDezenas())
 
 ```
 # -*- coding: utf-8 -*-
-from loterias import (MegaSena, LotoFacil, Quina, LotoMania, TimeMania,
+from loteria_caixa import (MegaSena, LotoFacil, Quina, LotoMania, TimeMania,
                       DuplaSena, Federal, Loteca, DiadeSorte, SuperSet)
 
 concurso = LotoFacil(2224)
@@ -26,7 +26,7 @@ print(concurso.listaDezenas())
 
 ```
 # -*- coding: utf-8 -*-
-from loterias import MegaSena
+from loteria_caixa import MegaSena
 
 concurso = MegaSena()
 
