@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "loterias_caixa"
+version = "0.1.0"
+description = "Um simples e fácil meio de receber dados de sorteio das loterias caixa!"
+authors = "Paulo Daniel"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = '^3.6'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
