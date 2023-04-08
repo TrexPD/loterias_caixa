@@ -48,6 +48,40 @@ print(Loterias._MODALIDADES_LOTERICAS)
 ['federal', 'diadesorte', 'duplasena', 'megasena', 'loteca', 'lotofacil', 'lotomania', 'quina', 'supersete', 'timemania']
 ```
 
+#### Listando todos os métodos disponíveis!
+```
+loteria = Loterias('megasena', concurso=2572)
+
+loteria.tipo_jogo()
+loteria.numero()
+loteria.nome_municipio_uf_sorteio()
+loteria.data_de_apuracao()
+loteria.valor_arrecadado()
+loteria.valor_estimado_do_proximo_concurso()
+loteria.valor_acumulado_do_proximo_concurso()
+loteria.valor_acumulado_concurso_especial()
+loteria.valor_acumulado_concurso_0_5()
+loteria.acumulado()
+loteria.indicador_concurso_especial()
+loteria.dezenas_sorteadas_ordem_sorteio()
+loteria.lista_resultado_equipe_esportiva()
+loteria.numero_jogo()
+loteria.nome_time_coracao_mes_sorte()
+loteria.tipo_publicacao()
+loteria.observacao()
+loteria.local_sorteio()
+loteria.data_proximo_concurso()
+loteria.numero_concurso_anterior()
+loteria.numero_concurso_proximo()
+loteria.valor_total_premio_faixa_um()
+loteria.numero_concurso_final_0_5()
+loteria.lista_municipio_uf_ganhadores()
+loteria.lista_rateio_premio()
+loteria.lista_de_dezenas()
+loteria.lista_de_dezenas_do_segundo_sorteio()
+loteria.id()
+```
+
 <h2 align="center">
 <strong>🌟
   Favorite este repositório

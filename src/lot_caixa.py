@@ -3,6 +3,7 @@ from functools import lru_cache
 from urllib3 import disable_warnings, exceptions
 from locale import setlocale, LC_ALL, currency
 
+
 disable_warnings(exceptions.InsecureRequestWarning)
 setlocale(LC_ALL, 'pt_BR.utf8')
 
