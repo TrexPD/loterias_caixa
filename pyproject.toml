@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "loterias_caixa"
-version = "0.1.0"
+version = "0.1.3"
 description = "Um simples e fácil meio de receber dados de sorteio das loterias caixa!"
-authors = "Paulo Daniel"
+authors = ['Paulo Daniel', 'Claudio Torres']
 readme = "README.md"
 
 [tool.poetry.dependencies]
