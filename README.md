@@ -1,62 +1,53 @@
-# Dados de sorteios - Loteria Caixa
+# Loterias Caixa
 
-## Codigo para receber dados do sorteio atual
+#### Uma biblioteca simples e fácil para receber dados de sorteio das loterias caixa!
 
-```
-# -*- coding: utf-8 -*-
-from loteria_caixa import *
+## Bibliotecas usadas:
 
-concurso = MegaSena()
+```functools```  ```locale```  ```requests```  ```urllib3```
 
-print(concurso.listaDezenas())
-````
-## ou use um sorteio especifico
+## Instalação:
+
+##### Para instalar o loterias-caixas em seu computador, basta digitar o seguinte comando no seu terminal:
 
 ```
-# -*- coding: utf-8 -*-
-from loteria_caixa import (MegaSena, LotoFacil, Quina, LotoMania, TimeMania,
-                      DuplaSena, Federal, Loteca, DiadeSorte, SuperSet)
+pip install loterias-caixa
+```
 
-concurso = LotoFacil(2224)
+## Uso na prática:
 
-print(concurso.listaDezenas())
-````
-
-## Abaixo todos os comandos
+##### Para receber os dados do sorteio mais recente, basta apenas instânciar a classe **'Loterias'** e dentro dela colocar a modalidade lotérica que você quiser, logo em seguida escolha o método de qual dado você quer receber, no exemplo abaixo usaremos a 'megasena' e logo em seguida queremos ver os dados do **valor arrecadado** então usamos o método "valor_arrecadado()"!
 
 ```
-# -*- coding: utf-8 -*-
-from loteria_caixa import MegaSena
-
-concurso = MegaSena()
-
-print(concurso.todosDados())
-print(concurso.tipoJogo())
-print(concurso.numero())
-print(concurso.nomeMunicipioUFSorteio())
-print(concurso.dataApuracao())
-print(concurso.valorArrecadado())
-print(concurso.valorEstimadoProximoConcurso())
-print(concurso.valorAcumuladoProximoConcurso())
-print(concurso.valorAcumuladoConcursoEspecial())
-print(concurso.valorAcumuladoConcurso_0_5())
-print(concurso.acumulado())
-print(concurso.indicadorConcursoEspecial())
-print(concurso.dezenasSorteadasOrdemSorteio())
-print(concurso.listaResultadoEquipeEsportiva())
-print(concurso.numeroJogo())
-print(concurso.nomeTimeCoracaoMesSorte())
-print(concurso.tipoPublicacao())
-print(concurso.observacao())
-print(concurso.localSorteio())
-print(concurso.dataProximoConcurso())
-print(concurso.numeroConcursoAnterior())
-print(concurso.numeroConcursoProximo())
-print(concurso.valorTotalPremioFaixaUm())
-print(concurso.numeroConcursoFinal_0_5())
-print(concurso.listaMunicipioUFGanhadores())
-print(concurso.listaRateioPremio())
-print(concurso.listaDezenas())
-print(concurso.listaDezenasSegundoSorteio())
-print(concurso.id())
+loteria = Loterias('megasena')
+print(loto.valor_arrecadado())
 ```
+
+#### Output:
+
+```
+R$ 53.208.981,00
+```
+
+##### Caso queira buscar por algum concurso em específico basta passar o argumento para o parâmetro **'concurso'**, neste exemplo usaremos o número **2572**, ele pode ser passado como **string** ou **número inteiro**!
+
+```
+loteria = Loterias('megasena', concurso=2572)
+print(loto.valor_arrecadado())
+```
+
+##### Dica: caso queira ver todas as modalidades lotéricas digite o comando abaixo, isso irá lista todas!
+
+```
+print(Loterias._MODALIDADES_LOTERICAS)
+```
+
+<h2 align="center">
+<strong>🌟
+  Favorite este repositório
+</strong>🌟
+</h2>
+<p align="center">
+  Criado com ❤️ e Python por
+<a href="https://github.com/TrexPD">Paulo Daniel (TrexPD)!</a>
+</p>
