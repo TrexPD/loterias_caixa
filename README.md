@@ -42,6 +42,12 @@ print(loto.valor_arrecadado())
 print(Loterias._MODALIDADES_LOTERICAS)
 ```
 
+#### Output:
+
+```
+['federal', 'diadesorte', 'duplasena', 'megasena', 'loteca', 'lotofacil', 'lotomania', 'quina', 'supersete', 'timemania']
+```
+
 <h2 align="center">
 <strong>🌟
   Favorite este repositório
